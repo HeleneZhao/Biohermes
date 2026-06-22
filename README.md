@@ -17,11 +17,16 @@ Python 3.11.13
 Key dependencies:
 LightGBM 4.6.0
 
-- DAPS
-- WGCNA 
+Outputs include:
+- DAPs results
+- WGCNA results
 - biomarker rankings
 - machine-learning model performance metrics
 - ROC curves
-- Mendelian randomization
+- Mendelian randomization results
 
-- 
+To reproduce the manuscript results:
+1. Obtain access to ADDI data.
+2. Run main_analysis.R.
+3. Run LightGBM.py
+4. Run MR.R 

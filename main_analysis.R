@@ -282,19 +282,6 @@ table(is.na(gap_cv$DGstatus))
 table(gap_cv$DGstatus2)
 table(is.na(gap_cv$DGstatus2))
 
-gap_cv <- gap_cv %>%
-  mutate(DGstatus3 = case_when(
-    diagnosis == 'CN' & NVSTRESC_AMYCLAS == 'NEGATIVE' ~ "CN-",
-    diagnosis == 'CN' & NVSTRESC_AMYCLAS == 'POSITIVE' ~ "CN+",
-    diagnosis == 'MCI' & NVSTRESC_AMYCLAS == 'NEGATIVE' ~ "CI-",
-    diagnosis == 'MCI' & NVSTRESC_AMYCLAS == 'POSITIVE' ~ "CI+",
-    diagnosis == 'AD' & NVSTRESC_AMYCLAS == 'NEGATIVE' ~ "CI-",
-    diagnosis == 'AD' & NVSTRESC_AMYCLAS == 'POSITIVE' ~ "CI+",
-    # Catch any cases that don't match, leaving them as NA
-  ))
-table(gap_cv$DGstatus3)
-
-
 
 gap_cv <- gap_cv %>%
   mutate(DGstatus4 = case_when(

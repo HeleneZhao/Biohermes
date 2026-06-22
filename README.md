@@ -17,3 +17,11 @@ Python 3.11.13
 Key dependencies:
 LightGBM 4.6.0
 
+- DAPS
+- WGCNA 
+- biomarker rankings
+- machine-learning model performance metrics
+- ROC curves
+- Mendelian randomization
+
+- 

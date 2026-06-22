@@ -20,8 +20,8 @@ LightGBM 4.6.0
 Outputs include:
 - DAPs results
 - WGCNA results
-- biomarker rankings
-- machine-learning model performance metrics
+- protein rankings
+- machine-learning model performance results
 - ROC curves
 - Mendelian randomization results
 
